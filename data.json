@@ -1,11 +1,11 @@
 [
     {
-        "question": "Are you an organization?",
-        "yes": {
-            "question": "Do you train large language models (LLMs) with >= 13 billion parameters?",
-            "yes": {
-                "question": "Are you rich?",
-                "yes": "Your best choice is Azure A100 or H100.",
+        "question": "Which dimension is the most relevant?",
+        "Respeto de los derechos humanos y las libertades fundamentales": {
+            "question": "What rights are under threat?",
+            "Libertades de información, de expresión y de prensa": {
+                "question": "Can you be more specific?",
+                "SUBVARIABLE": "Your best choice is Azure A100 or H100.",
                 "no": {
                     "question": "Are you not rich but also not poor?",
                     "yes": "Your best choice is AWS A100 or H100.",
@@ -18,7 +18,7 @@
                 "no": "Your best choice is 80% A6000 Ada / L40, 20% H100 SXM / PCIe."
             }
         },
-        "no": {
+        "Respeto por los derechos sociales y la libertad de expresión y de prensa": {
             "question": "Do you plan to train models?",
             "yes": {
                 "question": "Do you plan to train transformer models?",
