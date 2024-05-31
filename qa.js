@@ -1,13 +1,22 @@
+let questions;
+let currentQuestion;
+
 const init = () => {
   currentQuestion = questions[0];
-  document.getElementById("question").innerHTML = currentQuestion.question;
-  document.getElementById("answer").innerHTML = "";
-  document.getElementById("answer").style.display = "none";
-  document.getElementById("yes").style.display = "inline-block";
-  document.getElementById("no").style.display = "inline-block";
-  document.getElementById("yes").onclick = () => next(true);
-  document.getElementById("no").onclick = () => next(false);
+  showQuestion();
 };
+
+const showQuestion = () => {
+  DocumentTimeline.getElementById("question").innerHTML = currentQuestion.question;
+  const answersContainer = document.getElementById("answers");
+  answersContainer.innerHTML = "";
+
+  for(const [answer, nextQuestion] of Object.entries(currentQuestion.answers)) {
+    const button = document.createElement("button");
+    button.innerHTML = answer;
+    button.onclick = () =>
+  }
+}
 
 const next = (answer) => {
   if (typeof currentQuestion === "object") {
