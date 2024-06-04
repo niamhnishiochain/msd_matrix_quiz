@@ -1,74 +1,20 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Event Categorisation and Precedence</title>
-
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-    <meta name="referrer" content="no-referrer">
-    <meta name="description"
-        content="Categorise and contextualise the event using this interactive tool." />
-
-    <meta property="og:url" content="https://nanx.me/gpu/" />
-    <meta property="og:title" content="Event Categorisation and Precedence">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://nanx.me/gpu/preview.png">
-    <meta property="og:description"
-        content="Categorise and contextualise the event using this interactive tool.">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.2.3/litera/bootstrap.min.css"
-        integrity="sha512-bKFHl04NnBGpTyxFreApJzGG6ikCFJUZU0nBpEwPS9fbe0g+OTL2lJVc3fRNh5Q7bQtP8tYjefsJTwywPtgpyg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css"
-        integrity="sha512-YFENbnqHbCRmJt5d+9lHimyEMt8LKSNTMLSaHjvsclnZGICeY/0KYEeiHwD1Ux4Tcao0h60tdcMv+0GljvWyHg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="custom.css" />
-    <link rel="shortcut icon" href="https://nanx.me/image/favicon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question and Answer Tool</title>
+  <style>
+    #answer {
+      display: none;
+    }
+  </style>
 </head>
-
 <body>
-    <div class="container py-5">
-        <div class="px-4 py-5 my-5 text-center">
-
-            <img class="d-block mx-auto mb-4" src="logo.svg" alt="" width="80px">
-            <h1 class="h3">Event Categorisation and Precedence</h1>
-
-            <div class="col-lg-6 mx-auto">
-
-                <div class="qa mt-2 mb-3">
-                    <div class="lead" id="question"></div>
-                    <div class="lead" id="answer"></div>
-                </div>
-
-                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                    <button id="yes" type="button" class="btn btn-lg px-5 gap-3 btn-outline-success"
-                        onclick="nextQuestion(true)"><i class="bi-check2-circle"></i> Yes</button>
-                    <button id="no" type="button" class="btn btn-lg px-5 gap-3 btn-outline-danger"
-                        onclick="nextQuestion(false)"><i class="bi-dash-circle"></i> No</button>
-                    <button class="btn btn-lg px-4 btn-outline-secondary" onclick="init()"><i class="bi-eraser"></i>
-                        Restart</button>
-                </div>
-
-                <div class="mt-5">
-                    <p class="footer text-muted">Based on Tim Dettmers’ <a
-                            href="https://timdettmers.com/2023/01/30/which-gpu-for-deep-learning/" target="_blank">blog
-                            post</a>.  
-                    </p>
-                    <p class="footer text-muted">
-                        Built by <a href="https://nanx.me/">Nan Xiao</a>.
-                        <a href="https://github.com/nanxstats/gpu">GitHub repo</a>.
-                    </p>
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-    <script src="qa.js"></script>
+  <h1>Question and Answer Tool</h1>
+  <div id="question"></div>
+  <div id="answers"></div>
+  <div id="answer"></div>
+  <script src="qa.js"></script>
 </body>
-
 </html>

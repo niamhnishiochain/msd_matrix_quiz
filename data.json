@@ -1,98 +1,137 @@
 [
     {
         "question": "¿Qué factor de riesgo es el más relevante?",
-        "Violaciones graves a los derechos humanos": {
-            "question": "¿Qué derechos están amenazados? ¿O qué tipo de violaciones se están produciendo?",
-            "Violaciones a los derechos civiles y políticos": {            
-                "question": "¿Puede ser más específico?",
-                    "sí": {
-                        "opciones": [
-                        "Violaciones al derecho a la vida",
-                        "S V1 2",
-                        "S V1 3"
-                    ]
-                },  
-                    "no": 
-                        "Siga observando para conocer subvariables."
+        "multiple": false, 
+        "answers": {
+            "Factor 1: Violaciones graves a los derechos humanos": {
+                "question": "¿Qué derechos están amenazados? ¿O qué tipo de violaciones se están produciendo?",
+                "multiple": true, 
+                "answers": {
+                    "Violaciones a los derechos civiles y políticos": {
+                        "question": "¿Puede ser más específico?",
+                        "multiple": true, 
+                        "answers": {
+                            "Violaciones al derecho a la vida": "details",
+                            "Violaciones al derecho a la integridad personal": "details",
+                            "Violaciones al derecho a la libertad personal": "details",
+                            "Violaciones a los derechos a las garantías judiciales y a la protección judicial": "details",
+                            "Violaciones al derecho a la libertad de pensamiento y expresión": "details",
+                            "Violaciones al derecho a participar en la dirección de los asuntos públicos": "details",
+                            "Violaciones al derecho de reunión pacífica y sin armas": "details",
+                            "Violaciones a los derechos de asociación y de los derechos sindicales": "details",
+                            "Violaciones al derecho de circulación y de residencia": "details"
+                        }
+                    },
+                    "Afectaciones a los derechos económicos, sociales y culturales": {
+                        "question": "¿Puede ser más específico?",
+                        "multiple": true,
+                        "answers": {
+                            "Afectaciones a los derechos al trabajo y a condiciones justas, equitativas y satisfactorias de trabajo": "details",
+                            "Afectaciones al derecho a la seguridad social": "details",
+                            "Afectaciones al derecho a la salud": "details",
+                            "Afectaciones al derecho a un ambiente sano": "details",
+                            "Afectaciones al derecho a la alimentación": "details",
+                            "Afectaciones al derecho a la educación": "details",
+                            "Incumplimiento de la obligación de no discriminación": "details"
+                        }
+                    },
+                    "Impunidad de las violaciones de derechos humanos": "details"
+                }
             },
-            "Violation 2": {
-            "question": "¿Puede ser más específico?",
-                "sí": {
-                    "opciones": [
-                        "S V2 1",
-                        "S V2 2",
-                        "S V2 3"
-                ]},
-            "no": "Siga observando para conocer detalles más concretos."
-        },
-            "No lo sé": 
-                "Seguir observando y volver a la herramienta a tiempo."
-            }
-        },
-        "Respeto por los derechos sociales y la libertad de expresión y de prensa": {
-            "question": "Do you plan to train models?",
-            "yes": {
-                "question": "Do you plan to train transformer models?",
-                "yes": {
-                    "question": "Your best choice is RTX 4090. Is it within your budget?",
-                    "yes": "Your best choice is RTX 4090.",
-                    "no": {
-                        "question": "Your next best choice is used RTX 3090 or used RTX 3090 Ti. Are they within your budget?",
-                        "yes": "Your best choice is used RTX 3090 or used RTX 3090 Ti.",
-                        "no": "Sorry, do something else."
-                    }
-                },
-                "no": {
-                    "question": "Your best choice is RTX 4080. Is it within your budget?",
-                    "yes": "Your best choice is RTX 4080.",
-                    "no": {
-                        "question": "Your next best choice is RTX 4070 Ti. Is it within your budget?",
-                        "yes": "Your best choice is RTX 4070 Ti.",
-                        "no": {
-                            "question": "Your next best choice is used RTX 2080 Ti. Is it within your budget?",
-                            "yes": "Your best choice is used RTX 2080 Ti.",
-                            "no": {
-                                "question": "Your next best choice is used RTX 3060. Is it within your budget?",
-                                "yes": "Your best choice is used RTX 3060.",
-                                "no": {
-                                    "question": "Do you only work on small or streaming datasets?",
-                                    "yes": "Your best choice is vast.ai or Lambda Cloud.",
-                                    "no": "Complicated. Please read the entire <a href='https://timdettmers.com/2023/01/30/which-gpu-for-deep-learning/' target='_blank'>blog post</a> and decide based on that information."
-                                }
-                            }
+            "Factor 2: Acceso ilegítimo al poder": {
+                "question": "¿Qué derechos están amenazados? ¿O qué tipo de violaciones se están produciendo?",
+                "multiple": true, 
+                "answers": {
+                    "Déficit en las elecciones periódicas, libres y justas": {
+                        "question": "¿Puede ser más específico?",
+                        "multiple": true, 
+                        "answers": {
+                            "Ausencia de garantías para los aspirantes en elecciones": "details", 
+                            "Indebida intervención de órganos del poder público en la independencia de las autoridades electorales": "details",
+                            "Desconfianza ciudadana en el sistema electoral y en los resultados": "details"
+                        }
+                    }, 
+                    "Desacato de la autoridad civil": "details", 
+                    "Restricciones a la formación de partidos políticos o a su libre funcionamiento": {
+                        "question": "¿Puede ser más específico?",
+                        "multiple": true, 
+                        "answers": {
+                            "Obstáculos a la organización y reconocimiento de partidos y asociaciones políticas": "details",
+                            "Condiciones de desigualdad en el acceso al financiamiento de los partidos políticos": "details", 
+                            "Ambiente de persecución a partidos políticos de oposición": "details"
                         }
                     }
                 }
             },
-            "no": {
-                "question": "Do you use large language models (LLMs)?",
-                "yes": {
-                    "question": "Your best choice is RTX 4090. Is it within your budget?",
-                    "yes": "Your best choice is RTX 4090.",
-                    "no": {
-                        "question": "Your next best choice is used RTX 3090 or used RTX 3090 Ti. Are they within your budget?",
-                        "yes": "Your best choice is used RTX 3090 or used RTX 3090 Ti.",
-                        "no": {
-                            "question": "Do you only work on small or streaming datasets?",
-                            "yes": "Your best choice is vast.ai or Lambda Cloud.",
-                            "no": "Complicated. Please read the entire <a href='https://timdettmers.com/2023/01/30/which-gpu-for-deep-learning/' target='_blank'>blog post</a> and decide based on that information."
+            "Factor 3: Ejercicio ilegítimo del poder": {
+                "question": "¿Qué derechos están amenazados? ¿O qué tipo de violaciones se están produciendo?",
+                "multiple": true,
+                "answers": {
+                    "Afectaciones al Estado de Derecho" : {
+                        "question": "¿Puede ser más específico?",
+                        "multiple": true, 
+                        "answers": {
+                            "No acatamiento a la Constitución por uno o varios poderes públicos": "details",
+                            "Desacato de las decisiones judiciales por parte de los poderes públicos": "details",
+                            "Amenaza de modificación de las reglas de juego en el ejercicio del poder ejecutivo": "details"
                         }
+                    }, 
+                    "Afectación a la separación e independencia de los poderes públicos" : {
+                        "question": "¿Puede ser más específico?",
+                        "multiple": true, 
+                        "answers": {
+                            "Intromisión indebida en la independencia del Ejecutivo en otros poderes públicos": "details",
+                            "Utilización de acciones judiciales o administrativas para suspender a otros poderes públicos ": "details",
+                            "Amenazas y/o ataques contra congresistas, jueces, magistrados y otras altas autoridades": "details",
+                            "Declaratoria de estado de excepción y suspensión de las atribuciones de los poderes legislativo y judicial": "details"
+                        }
+                    }, 
+                    "Restricción a la participación ciudadana en las decisiones relativas a su propio desarrollo": {
+                        "question": "¿Puede ser más específico?",
+                        "multiple": true, 
+                        "answers": {
+                            "Ausencia de consultas sobre proyectos con impactos sociales y ambientales": "details",
+                            "Persecución a liderazgos comunitarios que defienden los derechos sociales y ambientales": "details"
+                        }   
+                    }, 
+                    "Corrupción en las instituciones del Estado": {
+                        "question": "¿Puede ser más específico?",
+                        "multiple": true, 
+                        "answers": {
+                            "Cooptación de instituciones del Estado por parte del crimen organizado": "details",
+                            "Restricciones a la participación social en el control de la gestión pública y de la corrupción": "details", 
+                            "Impunidad de los funcionarios corruptos": "details"
+                        }  
                     }
-                },
-                "no": {
-                    "question": "Your best choice is RTX 4070 Ti or RTX 4080. Are they within your budget?",
-                    "yes": "Your best choice is RTX 4070 Ti or RTX 4080.",
-                    "no": {
-                        "question": "Your next best choice is used RTX 2080 Ti. Is it within your budget?",
-                        "yes": "Your best choice is used RTX 2080 Ti.",
-                        "no": {
-                            "question": "Your next best choice is used RTX 3060. Is it within your budget?",
-                            "yes": "Your best choice is used RTX 3060.",
-                            "no": {
-                                "question": "Do you only work on small or streaming datasets?",
-                                "yes": "Your best choice is vast.ai or Lambda Cloud.",
-                                "no": "Complicated. Please read the entire <a href='https://timdettmers.com/2023/01/30/which-gpu-for-deep-learning/' target='_blank'>blog post</a> and decide based on that information."
-                            }
+                }
+            }, 
+            "Factor 4: Situaciones de crisis económica y social": {
+                "question": "¿Qué derechos están amenazados? ¿O qué tipo de violaciones se están produciendo?", 
+                "multiple": true, 
+                "answers": {
+                    "Medidas económicas de choque": "details",
+                    "Impactos sociales como resultado de medidas económicas": "details"    
+                }
+            },
+            "Factor 5: Inestabilidad política": {
+                "question": "¿Qué derechos están amenazados? ¿O qué tipo de violaciones se están produciendo?", 
+                "multiple": true, 
+                "answers": {
+                    "Afectaciones a la seguridad ciudadana":{
+                        "question": "¿Puede ser más específico?", 
+                        "multiple": true, 
+                        "answers": {
+                                "Conflicto armado interno- grupos insurgentes": "details", 
+                                "Criminalidad organizada": "details"
+                        }
+                    }, 
+                    "Oposición orientada a derribar el gobierno": {
+                        "multiple": true, 
+                        "answers": {
+                                "Oposición de sectores de poder económico ": "details", 
+                                "Oposición de sectores de poder político": "details", 
+                                "Oposición de movimientos sociales": "details", 
+                                "Desacato de las fuerzas de seguridad a la autoridad civil": "details"
                         }
                     }
                 }
